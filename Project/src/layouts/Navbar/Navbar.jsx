@@ -20,13 +20,12 @@ function Navbar() {
 			</div>
 			<h3>infoma</h3>
 			<nav ref={navRef}>
-				<Link to="/home">Home</Link>
-				<Link to="/treading">Trending</Link>
-				<Link to="/blog">Blog</Link>
-				<Link to="/newspaper">NewsPaper</Link>
-				<Link to="/about">About</Link>
-				<Link to="/login">Login</Link>
-
+				<Link to="/home" className="page">Home</Link>
+				<Link to="/treading" className="page">Trending</Link>
+				<Link to="/blog" className="page">Blog</Link>
+				<Link to="/newspaper" className="page">NewsPaper</Link>
+				<Link to="/about" className="page">About</Link>
+				<Link to="/login" className="page">Login</Link>
 				<button className="contact-button-1">Contact Us</button>
 				<button
 					className="nav-btn nav-close-btn"
