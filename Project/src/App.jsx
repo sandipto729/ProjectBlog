@@ -1,22 +1,18 @@
-// App.js
+import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Blog from './layouts/cardFetch/CardFetch';
+import BlogDetails from './layouts/Blog/BlogDetails';
 import Navbar from './layouts/Navbar/Navbar';
-// import HomePage from './pages/HomePage';
-// import AboutPage from './pages/AboutPage';
-import CardFEtch from './layouts/cardFetch/cardFetch'
-import CardFetch from './layouts/cardFetch/cardFetch';
 
 function App() {
   const router = createBrowserRouter([
     {
       path: '/',
-      element: (
-        <>
-          <Navbar />
-          {/* <HomePage /> */}
-          <CardFetch/>
-        </>
-      )
+      element: <Navbar/>,
+    },
+    {
+      path: '/blog/:id',
+      element: <BlogDetails />,
     }
   ]);
 

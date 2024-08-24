@@ -1,12 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap');
-
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: 'Inter', sans-serif;
-}
-
 :root {
 	--mainColor:white;
 	--mainColorLight: #eaebf3;
@@ -41,7 +32,7 @@ nav Link{
 	color: var(--textColor);
 }
 
-nav Link:hover {
+.page:hover {
 	color: var(--secondaryColor);
 }
 
@@ -80,6 +71,7 @@ nav {
 }
 .page{
      margin-right: 7px;
+	 color: var(--textColor);
 }
 .heading{
 	display:flex;
