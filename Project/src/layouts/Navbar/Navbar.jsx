@@ -16,9 +16,9 @@ function Navbar() {
 		<header>
 			<div className="image">
 			<img src="https://infoma.me/images/StudySyn.svg" alt="logo"></img>
-			<h1>infoma</h1>
+			< span className="infoma">infoma</span>
 			</div>
-			<h3>infoma</h3>
+			<h3 className="head">infoma</h3>
 			<nav ref={navRef}>
 				<Link to="/home" className="page">Home</Link>
 				<Link to="/treading" className="page">Trending</Link>
@@ -26,14 +26,15 @@ function Navbar() {
 				<Link to="/newspaper" className="page">NewsPaper</Link>
 				<Link to="/about" className="page">About</Link>
 				<Link to="/login" className="page">Login</Link>
-				<button className="contact-button-1">Contact Us</button>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
 					<FaTimes />
 				</button>
 			</nav>
+			<div className="contact">
 			<button className="contact-button-2">Contact Us</button>
+			</div>
 			<button
 				className="nav-btn"
 				onClick={showNavbar}>
