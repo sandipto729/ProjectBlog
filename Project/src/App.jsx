@@ -6,13 +6,15 @@ import Navbar from './layouts/Navbar/Navbar';
 import Footer from './layouts/Footer/Footer';
 import Login from './layouts/LoginForm/Login';
 import Profilepage from './layouts/Profile/Profilepage';
+import Slider from './layouts/Navbar/Slider';
 function App() {
   const router = createBrowserRouter([
     {
       path: '/',
       element: 
       <>
-        <Login/>
+        <Navbar/>
+        <Slider/>
       </>
       
     },
