@@ -1,21 +1,30 @@
-import { useState } from 'react'
-import './App.css'
-import CardFetch from "./layouts/cardFetch/cardFetch";
- // if layouts is in the same directory as the current file
+import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Blog from './layouts/cardFetch/CardFetch';
+import BlogDetails from './layouts/Blog/BlogDetails';
+import Navbar from './layouts/Navbar/Navbar';
+import Footer from './layouts/Footer/Footer';
+import Login from './layouts/LoginForm/Login';
+import Profilepage from './layouts/Profile/Profilepage';
+import Slider from './layouts/Navbar/Slider';
 function App() {
-    const Router=createBrowserRouter([
-        {
-            path:'/',
-            element:<CardFetch/>
-        }
-    ])
-  return (
-    <>
-      <RouterProvider router={Router} />
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: 
+      <>
+        <Navbar/>
+        <Slider/>
+      </>
       
-    </>
-  )
+    },
+    {
+      path:'/profile',
+      element:<Profilepage/>
+    }
+  ]);
+
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
