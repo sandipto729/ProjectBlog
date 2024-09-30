@@ -17,6 +17,9 @@ function App() {
         <Slider/>
       </>
       
+    },{
+      path: '/blog',
+      element: <Blog/>,
     },
     {
       path:'/profile',
