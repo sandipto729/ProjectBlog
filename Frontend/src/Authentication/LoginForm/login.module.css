@@ -1,0 +1,23 @@
+.login_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.login_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    gap: 2rem;
+    border: 2px solid rgb(108, 129, 249);
+    box-shadow: 1px 1px 10px rgb(60, 64, 93);
+    border-radius: 5px;
+    padding: 4rem 0;
+}
+.red{
+    color: red;
+}
