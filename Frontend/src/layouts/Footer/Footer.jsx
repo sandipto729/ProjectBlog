@@ -13,60 +13,18 @@ import footLogo from "../../assets/image/pexels-photo-262508.jpeg";
 const Footer = () => {
     return (
         <div>
-            <div className="footer_top">
-                <div className="top_container">
-                    <h2>Ramakrishna Math and Ashram</h2>
-                    <h4>
-                        Embrace the spiritual wisdom of Ramakrishna with devotion and
-                        unity!
-                    </h4>
-                    <ul className="top_social-links">
-                        <li>
-                            <a
-                                href="https://www.facebook.com/p/Sri-Ramakrishna-Siksha-Niketan-100057181941594/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <FaFacebook className="fab" aria-hidden="true" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <FaTwitter className="fab" aria-hidden="true" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <FaGooglePlusG className="fab" aria-hidden="true" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <FaLinkedin className="fab" aria-hidden="true" />
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://maps.app.goo.gl/35NpYHhCWGmScs8RA"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <FaMapMarkerAlt className="fab" aria-hidden="true" />
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
             <div className="footer-container">
                 <footer className="footer">
                     <div className="footer-top">
                         <div className="comp-logo">
+                            <div className="firste">
                             <Link className="logo-link" to='/'>
-                                <img className="logo-svg" src={footLogo} alt="infoma logo"/>
-                                Ramkrishna Ashram
+                                <img className="logo-svg" src="https://infoma.me/images/StudySyn.svg" alt="infoma logo"/>
                             </Link>
+                            <h1  className="infomar">infoma</h1>
+                          </div>
+                          <div className="filler-text">Seamless Learning for brighther futures</div>
                         </div>
-                        <div className="filler-text">Cultivating Spiritual Wisdom for a Transcendent Life</div>
                         <div className="social">
                             <a className="social-link" href="#">
                             <FaMapMarkerAlt className="fab_logo" aria-hidden="true" style={{color: '#0d7e20'}}/>
@@ -134,8 +92,9 @@ const Footer = () => {
                     </div>
                 </footer>
                 <div className="footer-copyright">
-                <p>Created and Maintained by : <a href="https://www.linkedin.com/in/ritam-vaskar-50627527a/ " style={{color: 'white'}}>Ritam Vaskar</a> and <a href="https://www.linkedin.com/in/sandipto-roy-675600277/" style={{color: 'white'}}>Sandipto Roy</a></p>
-                    <p>© 2024 - Present Haridasnagar Ramkrishna Mission. All rights reserved.</p>
+        <p>...............................................................................</p>
+                <p>Created and Maintained by : <a href="https://www.linkedin.com/in/pragyan-bagchi-4927a7302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style={{color: 'grey'}}>Pragyan Bagchi</a> and <a href="https://www.linkedin.com/in/sandipto-roy-675600277/" style={{color: 'grey'}}>Sandipto Roy</a></p>
+                    <p>© 2024 - Present infoma. All rights reserved.</p>
                     
                 </div>
             </div>
